@@ -54,7 +54,10 @@
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-        </li>       
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -434,7 +437,29 @@
           </li>
         </ul>
       </div>
-    </section>    
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contact">
+      <div class="my-auto">
+        <h2 class="mb-5">Get in Touch!</h2>
+        <form action="http://formspree.io/csivaraman1808@gmail.com" role="form" method="post">
+          <div class="form-group">
+              <label for="form_email">Email *</label>
+              <input id="form_name" type="text" name="form_name" class="form-control" placeholder="Please enter your email *" 
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required="required" data-error="Valid email is required.">
+              <div class="help-block with-errors"></div>
+          </div>
+          <div class="form-group">
+              <label for="form_message">Message *</label>
+              <textarea id="form_message" name="form_message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+              <div class="help-block with-errors"></div>
+          </div>
+          
+          <input type="submit" class="btn btn-success btn-send" value="Send message">         
+        </form>
+      </div>
+    </section>
+
   </div>
 
   <!-- Bootstrap core JavaScript -->
