@@ -25,29 +25,19 @@
     target: '#sideNav'
   });
 
-  $('[data-toggle="tooltip"]').tooltip();
-
-  function init_map() {
-    var var_location = new google.maps.LatLng(34.052235, -118.243683);
-
-    var var_mapoptions = {
-      center: var_location,
-      zoom: 10
-    };
-
-    var var_marker = new google.maps.Marker({
-      position: var_location,
-      map: var_map,
-      title: "Los Angeles"
-    });
-
-    var var_map = new google.maps.Map(document.getElementById("map"),
-    var_mapoptions);
-
-    var_marker.setMap(var_map);
-
-  }
-
-  google.maps.event.addDomListener(window, 'load', init_map);
+  $('[data-toggle="tooltip"]').tooltip(); 
 
 })(jQuery); // End of use strict
+
+
+function initMap() {
+  var la = { lat: 34.052235, lng: -118.243683 };
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 10,
+    center: la
+  });
+  var marker = new google.maps.Marker({
+    position: la,
+    map: map
+  });
+}
