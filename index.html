@@ -93,13 +93,13 @@
             </a>
           </li>
           <li class="list-inline-item">
-              <a href="docs/resume.pdf" target="resumewnd">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-download fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
+            <a href="docs/resume.pdf" target="resumewnd">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-download fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
         </ul>
       </div>
     </section>
@@ -451,35 +451,46 @@
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contact">
       <div class="my-auto">
         <h2 class="mb-5">Get in Touch!</h2>
-        <form action="https://formspree.io/csivaraman1808@gmail.com" role="form" method="post">
-          <div class="form-group">
-              <label for="form_email">Email *</label>
-              <input id="form_name" type="text" name="form_name" class="form-control" placeholder="Please enter your email *" 
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required="required" data-error="Valid email is required.">
-              <div class="help-block with-errors"></div>
+        <div class="row">
+          <div class="col-md-6">
+            <form action="https://formspree.io/csivaraman1808@gmail.com" role="form" method="post">
+              <div class="form-group">
+                <label for="form_email">Email *</label>
+                <input id="form_name" type="text" name="form_name" class="form-control" placeholder="Please enter your email *" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$"
+                  required="required" data-error="Valid email is required.">
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <label for="form_message">Message *</label>
+                <textarea id="form_message" name="form_message" class="form-control" placeholder="Message for me *" rows="4" required="required"
+                  data-error="Please,leave us a message."></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
+
+              <input type="submit" class="btn btn-success btn-send" value="Send message">
+            </form>
           </div>
-          <div class="form-group">
-              <label for="form_message">Message *</label>
-              <textarea id="form_message" name="form_message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
-              <div class="help-block with-errors"></div>
+          <div class="col-md-6">
+            <div id="map" style="width:100%;height:100%;">
+            </div>
           </div>
-          
-          <input type="submit" class="btn btn-success btn-send" value="Send message">         
-        </form>
-      </div>
+        </div>
     </section>
 
-  </div>
+    </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
+    <!-- Google Maps API -->
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
 
 </body>
 
